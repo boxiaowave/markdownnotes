@@ -45,5 +45,7 @@ git push -u origin master
 ```
 这样基本就完成了本地仓库和云端仓库的连接设置。这样就可以愉快的使用`git pull`和`git push`让本地文件和远端文件同步更新。
 
+这里的配置在linux，OSX和windows下应该都是通用的，windows的cmd应该也可以完成类似的工作，个人还是推荐git bash。
+
 
 
