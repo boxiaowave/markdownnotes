@@ -1,6 +1,6 @@
 #git和github配置
 
-之前维勇帮我在windows下配置了一下，初始化git和github之后，主要用的命令就是`git add`，`git commit`，`git pull`和`git push`之类的简单命令，这次在ubuntu上面自己配置完全懵逼了，赶紧查了下资料自己配置了下，这里把过程记录下。
+之前维勇帮我在OSX下配置了一下，初始化git和github之后，主要用的命令就是`git add`，`git commit`，`git pull`和`git push`之类的简单命令，这次在ubuntu上面自己配置完全懵逼了，赶紧查了下资料自己配置了下，这里把过程记录下。
 
 这里时打算把用markdown写的文档同步到github上，云端好跨平台同步，同时有版本控制比较好回滚，最主要现在evernote不支持markdown文件导入（就我目前所知是这样的），像wiznote之类的不太愿意用。
 
