@@ -97,6 +97,27 @@ In [83]: %run -p -l 3 -s cumulative BubbleSort.py
 `%prun`只能运行python语句，不能运行文件，用法不是特别清楚，但`%run -p`的功能已经足够分析脚本。
 
 ##IPython Notebook
-一个类似与mathematica的交互计算文档格式
+一个类似与mathematica的交互计算文档格式，类似的可以导出基于JSON的ipynb格式文档以演示,需要使用浏览器打开.
+
+##书里的一些tips
+###模块更新后的重载
+python导入模块后会创建一个同名命名空间将其中的函数和变量之类保存,下次导入模块都是对该命名空间的引用,所以及时你对模块文件进行了修改,重新导入模块无法使修改生效,这个问题可以在文件中加入reload()函数.例如:
+```python
+import module
+reload(module)
+```
+当依赖变多了,便需要在很多地方加入reload,最好的办法还是重启解释器.
+
+
+###IPython个人定制
+IPython可以由用户自己定制,其配置文件为~/.config/ipython/ipython_config.py,可以用以下命令创建一个新个性配置:
+```bash
+ipython profile create secret_project
+```
+创建了profile_secret_project目录中配置文件,使用
+```bash
+ipython --profile=secret_project
+```
+即可使用相应配置打开IPython.
 
 
