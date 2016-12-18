@@ -1,4 +1,4 @@
-#git和github配置
+# git和github配置
 
 之前维勇帮我在OSX下配置了一下，初始化git和github之后，主要用的命令就是`git add`，`git commit`，`git pull`和`git push`之类的简单命令，这次在ubuntu上面自己配置完全懵逼了，赶紧查了下资料自己配置了下，这里把过程记录下。
 
@@ -6,7 +6,7 @@
 
 好，我们开始吧。
 
-##git的本地设置
+## git的本地设置
 linux和osx都是自带git软件的，而windows下需要下载，可以下载github上提供的客户端，里面最主要有个git bash的玩意，使用起来和ubuntu的终端很像，感觉特别好，可以用来用gcc和g++编译C/C\+\+，比cmd不知道高到哪里去了。
 
 我们这里希望把markdownnotes文件夹同步到github上，首先要在本地用git初始化，加入本地git配置，进入文件夹，依次使用以下命令初始化当前目录的git配置
@@ -19,7 +19,7 @@ git init
 
 之后就可以用命令`git add`和`git commit -m <comment>`在本地添加文件到分支并提交.其中用户名和邮箱的配置文件`.gitconfig`在`～/`下，可以修改它达到改变user.name和user.email的目的。
 
-##将本地仓库和github的远端仓库连接并同步
+## 将本地仓库和github的远端仓库连接并同步
 
 首先需要在本地生成SSH秘钥
 ``` bash
