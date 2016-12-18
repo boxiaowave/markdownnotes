@@ -3,7 +3,7 @@ Numpy模块是Python应用于科学计算时比较重要的一个模块,包含�
 
 在python中常用的导入numpy的格式为`import numpy as np`,用np作为numpy的别名.
 
-##Numpy的ndarray
+## Numpy的ndarray
 
 有以下命令:
 ```bash

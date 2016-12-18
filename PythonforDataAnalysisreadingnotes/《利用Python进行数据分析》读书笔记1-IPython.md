@@ -1,7 +1,7 @@
 #《利用Python进行数据分析》读书笔记1-IPython
 
 
-##IPython
+## IPython
 
 Ipython有许多magic command，以%开头，例如`%run filename`运行python脚本，以下几个比较有意思的magic command：
 
@@ -26,7 +26,7 @@ In [60]: %cd db #进入书签目录
 ```
 利用该系统可以很好的切换工作目录。
 
-###ipd调试工具
+### ipd调试工具
 Ipython集成并加强了python的pd调试器，运行文件出错后可以输入`%debug`打开ipd调试器并自动跳转到出错的位置。也可以在运行python脚本时加入-d选项，例如
 ```bash
 In [64]: %run -d BubbleSort.py #这里可以在-d后面加入另一个选项-b number自动在number行设置断点。
@@ -57,7 +57,7 @@ NOTE: Enter 'c' at the ipdb>  prompt to continue execution.
 
 还有个`%debug`可以用以调试函数，像`%debug(function，*arg）`.
 
-###%prun和%run -p
+### %prun和%run -p
 python有一个名为cProfile的性能分析工具，主要在命令行中使用，例如：
 
 ```bash
@@ -96,7 +96,7 @@ In [83]: %run -p -l 3 -s cumulative BubbleSort.py
 ```
 `%prun`只能运行python语句，不能运行文件，用法不是特别清楚，但`%run -p`的功能已经足够分析脚本。
 
-##IPython Notebook
+## IPython Notebook
 一个类似与mathematica的交互计算文档格式，类似的可以导出基于JSON的ipynb格式文档以演示,需要使用浏览器打开.
 
 它有一些快捷键,这里可以记一下:
@@ -146,7 +146,7 @@ In [83]: %run -p -l 3 -s cumulative BubbleSort.py
 `Q`: close the pager
 `Shift-Space`: scroll notebook up
 `Space`: scroll notebook down
-####Edit Mode (press Enter to enable)
+#### Edit Mode (press Enter to enable)
 
 Tab
 : code completion or indent
@@ -175,8 +175,8 @@ Tab
 `Ctrl-S`: Save and Checkpoint
 `Down`: move cursor down
 `Up`: move cursor up
-##书里的一些tips
-###模块更新后的重载
+## 书里的一些tips
+### 模块更新后的重载
 python导入模块后会创建一个同名命名空间将其中的函数和变量之类保存,下次导入模块都是对该命名空间的引用,所以及时你对模块文件进行了修改,重新导入模块无法使修改生效,这个问题可以在文件中加入reload()函数.例如:
 ```python
 import module
@@ -185,7 +185,7 @@ reload(module)
 当依赖变多了,便需要在很多地方加入reload,最好的办法还是重启解释器.
 
 
-###IPython个人定制
+### IPython个人定制
 IPython可以由用户自己定制,其配置文件为~/.config/ipython/ipython_config.py,可以用以下命令创建一个新个性配置:
 ```bash
 ipython profile create secret_project
